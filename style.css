@@ -1,0 +1,125 @@
+body {
+  font-family: 'Bebas Neue', cursive;
+  color: #404042;
+  font-size: 18px;
+  margin: 0;
+}
+
+h1, h2, h3 {
+  color: white;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.container {
+  width: right;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.banner {
+  background-color: #404042;
+  background-image: url('images/banner.png');
+  background-size: cover;
+  background-position: center;
+  padding: 10px;
+  text-align: center;
+}
+
+.banner h1 {
+  color: #2fcbfa;
+  font-size: 100px;
+  margin: 20px auto;
+}
+
+.banner h2 {
+  color: #2fcbfa;
+  font-size: 16;
+}
+
+.banner p {
+  color: white;
+  text-shadow: #404042 0.1em 0.1em 0.2em;
+  font-size: 36px;
+}
+
+.btn {
+  background-color: #2fcbfa;
+  color: white;
+  padding: 30px 30px;
+  border-radius: 50%;
+  display: inline-block;
+  text-decoration: none;
+  transition: .3s;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #2396d9;
+  color: white;
+}
+
+.cards {
+  display: block;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 16px;
+  box-shadow: 0 0 16px rgba(0,0,0,0.1);
+  margin-left: 200px;
+  float: right;
+}
+
+.card {
+  background-image: url('images/card.png');
+  background-size: cover;
+  border-radius: 4px;
+  padding: 5px;
+  margin: 8px;
+  flex-grow: 1;
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin: 5px 0px 0px 0px
+}
+
+.footer {
+  background: #404042;
+  color: white;
+  padding: 10px 0px;
+}
+
+.footer img {
+  width: 100px;
+  height: 100px;
+}
+
+@media (min-width: 300px) {
+  .container {
+    width: 400px;
+  }
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 700px) {
+  .container {
+    width: 600px;
+  }
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1000px) {
+  .container {
+    width: 900px;
+  }
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
